@@ -1,0 +1,13 @@
+.mapa img {
+	width: 75%;
+	max-width: 727px;
+}
+
+.mapa {
+	text-align: center;
+}
+
+.mapa p {
+	font-size: 2em;
+	font-weight: bold;
+}
