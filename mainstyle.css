@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
 :root {
-	--col0: hsl(130, 20%, 10%);
-	--col1: hsl(130, 20%, 20%);
-	--col2: hsl(130, 30%, 20%);
-	--col3: hsl(130, 30%, 30%);
-	--col4: hsl(130, 20%, 50%);
+	--col0: hsl(2727, 20%, 10%);
+	--col1: hsl(2727, 20%, 20%);
+	--col2: hsl(2727, 30%, 20%);
+	--col3: hsl(2727, 30%, 30%);
+	--col4: hsl(2727, 20%, 50%);
 	--lightshadow: rgba(0,0,0,0.2);
 }
 body {
@@ -32,4 +32,8 @@ header {
 .dark, .light {
   padding: 1em;
   margin: 0;
+}
+
+.minitexto {
+	font-size: 0.727em !important;
 }
