@@ -1,26 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+:root {
 
-nav {
-	background-color: var(--col3);
-	margin: 0;
-	width: 100%;
-	height: 3.25em;
+	--fixedmargin: 1rem;
+}
+
+/* SECCIÓN PARA TODO */
+
+.navegador, .pc {
 	position: fixed;
-	top: 0px;
+	top: var(--fixedmargin);
+	left: 0;
+	right: 0;
+	padding-inline: var(--fixedmargin);
+	display: flex;
+	justify-content: space-between;
 }
 
 nav * {
 	transition: 0.3s;
 }
-
-nav a img {
+.nav-izd {
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+}
+.nav-izd a:has(img) {
 	height: 2.75em;
 	padding: 0.25em;
-	float: left;
+	position: fixed;
+	margin-right: var(--fixedmargin);
+	display: inline-block;
 }
 
-nav a:not(:has(img)) {
-	float: left;
+.nav-izd a img {
+	height: 2.75em;
+}
+
+.nav-izd a:not(:has(img)) {
+
 	color: #fff;
 	text-align: center;
 	padding: 1em;
@@ -28,7 +45,7 @@ nav a:not(:has(img)) {
 }
 
 .subnav {
-	float: left;
+
 	overflow: hidden;
 }
 
@@ -42,7 +59,7 @@ nav a:not(:has(img)) {
 	margin: 0;
 }
 
-nav a:hover, .subnav:hover .subnav-btn {
+.nav-izd a:not(:has(img)):hover, .subnav:hover .subnav-btn {
 	background-color: var(--col4);
 	/*color: #fff;
 	*/
@@ -61,7 +78,7 @@ nav a:hover, .subnav:hover .subnav-btn {
 }
 
 .subnav-cont a {
-	float: left;
+
 	/*
 	color: hsl(130,60%,40%);
 	*/
@@ -82,3 +99,11 @@ nav a:hover, .subnav:hover .subnav-btn {
 .prenav {
 	height: 3.5em;
 }
+
+.nav-margin {
+	padding-left: 3em;
+	padding-bottom: 2em;
+	display: inline-block;
+
+}
+

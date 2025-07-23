@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
 :root {
-	--col0: hsl(2727, 20%, 10%);
-	--col1: hsl(2727, 20%, 20%);
-	--col2: hsl(2727, 30%, 20%);
-	--col3: hsl(2727, 30%, 30%);
-	--col4: hsl(2727, 20%, 50%);
+	--colcode: 567;
+	--colcodeB: 518;
+	--col0: hsl(var(--colcode), 20%, 10%);
+	--col1: hsl(var(--colcode), 20%, 20%);
+	--col2: hsl(var(--colcode), 30%, 20%);
+	--col3: hsl(var(--colcode), 30%, 30%);
+	--col4: hsl(var(--colcode), 20%, 50%);
+	/*Colores B*/
+	--col0b: hsl(var(--colcodeB), 20%, 10%);
+	--col1b: hsl(var(--colcodeB), 20%, 20%);
+	--col2b: hsl(var(--colcodeB), 30%, 30%);
+	--col3b: hsl(var(--colcodeB), 30%, 40%);
+	--col4b: hsl(var(--colcodeB), 30%, 50%);
+	--col5b: hsl(var(--colcodeB), 30%, 60%);
 	--lightshadow: rgba(0,0,0,0.2);
 }
 body {
@@ -37,3 +46,15 @@ header {
 .minitexto {
 	font-size: 0.727em !important;
 }
+
+.olas {
+	position: absolute;
+	height: 65rem;
+	top: 0;
+}
+
+.kill {
+	position: relative;
+	-webkit-filter: url(#kill);
+	margin-bottom: -3em;
+  }

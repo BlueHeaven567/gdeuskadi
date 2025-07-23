@@ -1,0 +1,7 @@
+.dynbutton:hover {
+    transform: rotate(-5deg) scale(110%);
+}
+
+.dynbutton:active {
+    transform:  rotate(-5deg) scale(85%);
+}
